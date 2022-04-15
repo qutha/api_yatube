@@ -9,10 +9,6 @@ User = get_user_model()
 
 
 class PostSerializer(serializers.ModelSerializer):
-    # image = serializers.ImageField(required=False)
-    # group = serializers.PrimaryKeyRelatedField(
-    #     queryset=Group.objects.all(), required=False,
-    # )
     author = serializers.StringRelatedField()
 
     class Meta:
